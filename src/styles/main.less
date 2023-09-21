@@ -1,0 +1,75 @@
+@fontePrincipal:'Kanit', sans-serif;
+
+@corDeFundo: #684951;
+@corDoInput: #6b3b46;
+@corDoTexto: #000000;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:@corDeFundo;
+}
+
+h1{
+    font-size: 40px;
+    font-family: @fontePrincipal;
+    margin-bottom: 5px;
+}
+
+#tarefa{
+    width: 300px;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    color: #fff;
+    background-color:@corDoInput;
+}
+
+#btn{
+    width: 100px;
+    padding: 8px;
+    background-color: #6b3b46;
+    color: #fff;
+    border: 1px solid black;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#lista{
+    list-style-type: none;
+    
+ }
+
+a{
+    text-decoration: none;
+    color:@corDoTexto ;
+}
+
+ li{
+    margin-bottom: 8px;
+    font-size: 20px;
+
+ }
+
+#btn:hover{
+    background-color: #7e545e;
+}
+
+a.visited {
+    color: @corDoTexto;
+    text-decoration:line-through;
+  }
+
+input::placeholder {
+    color: @corDoTexto;
+ }
+
+ 
